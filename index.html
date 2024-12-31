@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Eat?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Foodice</h1>
+
+        <label for="category">Choose a category:</label>
+        <select id="category">
+            <option value="breakfast">Breakfast</option>
+            <option value="breakfast-lunch">Breakfast-Lunch</option>
+            <option value="lunch">Lunch</option>
+            <option value="evening-snacks">Evening Snacks</option>
+            <option value="dinner">Dinner</option>
+            <option value="night-snacks">Night Snacks</option>
+        </select>
+
+        <button id="rollButton" class="dice-btn">🎲 Roll for Food</button>
+        <h2 id="foodDisplay">Select a category to see a suggestion</h2>
+
+        <hr>
+
+        <h3>Add a new food item:</h3>
+        <input type="text" id="newFood" placeholder="Enter food name" />
+        <button id="addFoodButton">Add Food</button>
+        
+        <p id="error" style="color: red; display: none;">Food item already exists!</p>
+
+        <hr>
+
+        <h3 id="listToggleBtn">Custom Food List</h3>
+        <ul id="customList" style="display: none;"></ul> <!-- Initially hidden -->
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
