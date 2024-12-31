@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize food list with categories and items
     let foodData = JSON.parse(localStorage.getItem('foodData')) || {
-        'breakfast': ['w'],
-        'breakfast-lunch': ['w'],
-        'lunch': ['w'],
-        'evening-snacks': ['w'],
-        'dinner': ['w'],
-        'night-snacks': ['w']
+        'breakfast': ['poha','samosa','dhokla','gathiya','sev-tari','aloo paratha','thepla','dal-pakwan','ghughra','bhajiya','bhakhri','dhosa'],
+        'breakfast-lunch': ['dabeli','vadapav','samosa','dhokla','sev-tari','dal-pakwan','ghughra','chhole kulcha'],
+        'lunch': ['chhole kulcha','Gujrati thali','Panjabi thali','pizza','paratha'],
+        'evening-snacks': ['dahi puri','bhel','vadapav','dabeli','garlic bread','steam dhokla','Frankie','ghughra','aloo paratha','sandwich','Meggie','kachori'],
+        'dinner': ['chhole kulcha','Gujrati thali','Panjabi thali','pizza','paratha','Chinese','south Indian','frankie','dal-bati'],
+        'night-snacks': ['gathiya','bhajiya','sev-tari','pizza']
     };
 
     // Function to save food data to localStorage
